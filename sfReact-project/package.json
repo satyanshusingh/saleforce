@@ -1,0 +1,17 @@
+{
+  "name": "sfReact_project",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n SIMULATOR,WEB \"npm start --prefix ../SFCRMSIMULATOR\" \"npm run dev -w client\"",
+    "build": "npm run build -w client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

@@ -1,0 +1,94 @@
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+body { background: #f3f8f7; }
+.app-shell { min-height: 100vh; }
+.topbar { background: #fff !important; color: #1d2939 !important; border-bottom: 1px solid #e8ecf3; }
+.topbar .MuiToolbar-root { min-height: 68px; padding: 0 28px; }
+.topbar-title { font-weight: 650 !important; font-size: 15px !important; }
+.desktop-nav .MuiDrawer-paper { border-right: 1px solid #e8ecf3; background: #fff; }
+.sidebar-inner { display: flex; flex-direction: column; height: 100%; overflow-y: auto; padding: 18px 14px; }
+.sidebar-brand { display: flex; align-items: center; gap: 12px; padding: 5px 8px 20px; }
+.brand-mark { width: 48px; height: 48px; border-radius: 15px; color: white; background: linear-gradient(135deg,#0f766e,#14b8a6); display: grid; place-items: center; }
+.brand-mark.small { width: 38px; height: 38px; border-radius: 12px; font-size: 19px; font-weight: 800; }
+.brand-mark.small span { color: white; }
+.nav-section { margin-top: 8px; }
+.nav-caption { padding: 8px 11px 5px; color: #98a2b3; font-size: 10px !important; font-weight: 700 !important; letter-spacing: 1px !important; text-transform: uppercase; }
+.nav-list { padding: 0 !important; }
+.nav-list .MuiListItemButton-root { border-radius: 9px; margin: 2px 0; min-height: 42px; color: #667085; }
+.nav-list .MuiListItemButton-root.Mui-selected { color: #0f766e; background: #e7f5f2; }
+.nav-list .MuiListItemButton-root.Mui-selected .MuiListItemIcon-root { color: #0f766e; }
+.nav-list .MuiListItemIcon-root { min-width: 37px; color: #7b8798; }
+.nav-list .MuiListItemText-primary { font-size: 13px; font-weight: 550; }
+.sidebar-bottom { margin-top: auto; padding: 12px 0 0; }
+.sidebar-account { width: 100%; justify-content: flex-start !important; gap: 10px; margin-top: 10px !important; padding: 9px 8px !important; color: #344054 !important; border-radius: 9px !important; text-align: left; }
+.sidebar-account .MuiAvatar-root { width: 34px; height: 34px; font-size: 11px; }
+.sidebar-account-copy { display: flex; flex: 1; flex-direction: column; min-width: 0; }
+.sidebar-account-name { font-size: 12px !important; font-weight: 700 !important; color: #344054; white-space: nowrap; }
+.sidebar-bottom .MuiTypography-root { display: block; padding-top: 12px; }
+.page-content { padding: 100px 32px 38px; min-height: 100vh; }
+.page-heading { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 25px; }
+.page-heading .MuiTypography-h4 { font-size: 26px; letter-spacing: -.5px; }
+.stats-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 16px; }
+.stat-card, .dashboard-panel, .workflow-card, .table-card { border: 1px solid #e9edf4; box-shadow: 0 2px 8px rgba(27,39,68,.035) !important; }
+.stat-card .MuiCardContent-root { padding: 20px; }
+.stat-icon { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; }
+.stat-icon.blue { color: #0f766e; background: #e7f5f2; }
+.stat-icon.green { color: #11856d; background: #e8f7f1; }
+.stat-icon.purple { color: #7956c7; background: #f1edfc; }
+.stat-icon.orange { color: #bd761e; background: #fff4e5; }
+.dashboard-grid { display: grid; grid-template-columns: minmax(0,1.5fr) minmax(280px,1fr); gap: 16px; margin-top: 18px; }
+.dashboard-panel .MuiCardContent-root { padding: 23px; }
+.stage-row { margin: 20px 0; }
+.stage-label, .quick-metric { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 8px; }
+.stage-label strong, .quick-metric span { font-size: 13px; }
+.stage-label span { color: #7a8698; font-size: 12px; }
+.stage-row .MuiLinearProgress-root { height: 7px; border-radius: 8px; background: #eef1f7; }
+.quick-metric { padding: 13px 0; border-bottom: 1px solid #f0f2f6; margin: 0; }
+.quick-metric strong { font-size: 14px; }
+.text-warning { color: #c77b18; }
+.table-card { overflow: hidden; }
+.table-toolbar { padding: 15px 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.table-toolbar .MuiTextField-root { width: min(340px,100%); }
+.table-scroll { overflow-x: auto; }
+.table-card .MuiTableCell-head { background: #fafbfc; color: #687486; font-weight: 650; white-space: nowrap; }
+.table-card .MuiTableCell-root { border-color: #edf0f5; }
+.row-actions { min-width: 130px; white-space: nowrap; }
+.status-chip { font-weight: 600 !important; }
+.status-chip.closed-won, .status-chip.completed { color: #147d64; background: #e6f5ef; }
+.status-chip.closed-lost, .status-chip.critical { color: #b42318; background: #fff0ee; }
+.status-chip.new, .status-chip.prospecting { color: #0f766e; background: #e7f5f2; }
+.status-chip.high, .status-chip.escalated { color: #a45b0a; background: #fff4e5; }
+.empty-table { text-align: center !important; padding: 34px !important; color: #7b8798 !important; }
+.form-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; padding-top: 10px !important; }
+.insight-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; }
+.workflow-card .MuiCardContent-root { padding: 22px; }
+.login-screen { min-height: 100vh; display: grid; place-items: center; padding: 24px; background: radial-gradient(circle at 50% 20%,#dff3ef 0,#f3f8f7 52%); }
+.data-loading-screen { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; background: #f3f8f7; text-align: center; }
+.login-card { width: min(100%,460px); border: 1px solid #e9edf4; box-shadow: 0 18px 55px rgba(37,54,104,.09) !important; }
+.login-card .MuiCardContent-root { padding: 32px; }
+.role-login { justify-content: flex-start !important; padding: 11px 13px !important; color: #344054 !important; border-color: #e5e9f0 !important; text-align: left; }
+.avatar-dot { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; color: white; font-size: 12px; font-weight: 700; }
+.role-copy { display: flex; flex-direction: column; flex: 1; margin-left: 10px; }
+.role-copy strong { font-size: 13px; }
+.role-copy small { color: #7b8798; font-size: 11px; margin-top: 2px; }
+.role-lock { color: #98a2b3; }
+.demo-notice { display: block; font-size: 11px !important; margin-top: 22px !important; text-align: center; }
+.mobile-menu { display: none !important; }
+@media (max-width: 1050px) {
+  .stats-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .dashboard-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 899px) {
+  .desktop-nav { display: none; }
+  .mobile-menu { display: inline-flex !important; margin-right: 8px !important; }
+  .page-content { margin-left: 0 !important; padding: 90px 20px 30px; }
+  .topbar .MuiToolbar-root { padding: 0 12px; }
+}
+@media (max-width: 600px) {
+  .stats-grid, .insight-grid, .form-grid { grid-template-columns: 1fr; }
+  .page-heading { align-items: flex-start; flex-direction: column; }
+  .page-heading .MuiTypography-h4 { font-size: 23px; }
+}
